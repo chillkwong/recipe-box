@@ -34,7 +34,7 @@ class Recipe extends Model
     		'directions' => [
     			RecipeDirection::form(),
     			RecipeDirection::form()    			
-    		] 
+    		]
     	];
     }
 }
