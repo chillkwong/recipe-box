@@ -2886,6 +2886,22 @@ if (false) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-5bb2d2fc\",\"hasScoped\":false}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/views/test.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_vm._v("\n\tHIHI\n")])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-5bb2d2fc", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-60aeb566\",\"hasScoped\":false}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/ImagePreview.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16113,6 +16129,9 @@ function objectToFormData(obj, form, namespace) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_Recipe_Show_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__views_Recipe_Show_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__views_Recipe_Form_vue__ = __webpack_require__("./resources/assets/js/views/Recipe/Form.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__views_Recipe_Form_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__views_Recipe_Form_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__views_test_vue__ = __webpack_require__("./resources/assets/js/views/test.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__views_test_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__views_test_vue__);
+
 
 
 
@@ -16126,7 +16145,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 	mode: 'history',
-	routes: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_4__views_Recipe_index_vue___default.a }, { path: '/recipes/create', component: __WEBPACK_IMPORTED_MODULE_6__views_Recipe_Form_vue___default.a, meta: { mode: 'create' } }, { path: '/recipes/:id/edit', component: __WEBPACK_IMPORTED_MODULE_6__views_Recipe_Form_vue___default.a, meta: { mode: 'edit' } }, { path: '/recipes/:id', component: __WEBPACK_IMPORTED_MODULE_5__views_Recipe_Show_vue___default.a }, { path: '/register', component: __WEBPACK_IMPORTED_MODULE_2__views_Auth_Register_vue___default.a }, { path: '/login', component: __WEBPACK_IMPORTED_MODULE_3__views_Auth_Login_vue___default.a }]
+	routes: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_4__views_Recipe_index_vue___default.a }, { path: '/recipes/create', component: __WEBPACK_IMPORTED_MODULE_6__views_Recipe_Form_vue___default.a, meta: { mode: 'create' } }, { path: '/recipes/:id/edit', component: __WEBPACK_IMPORTED_MODULE_6__views_Recipe_Form_vue___default.a, meta: { mode: 'edit' } }, { path: '/recipes/:id', component: __WEBPACK_IMPORTED_MODULE_5__views_Recipe_Show_vue___default.a }, { path: '/register', component: __WEBPACK_IMPORTED_MODULE_2__views_Auth_Register_vue___default.a }, { path: '/test', component: __WEBPACK_IMPORTED_MODULE_7__views_test_vue___default.a }, { path: '/login', component: __WEBPACK_IMPORTED_MODULE_3__views_Auth_Login_vue___default.a }]
 
 });
 
@@ -16355,6 +16374,47 @@ if (false) {(function () {
     hotAPI.createRecord("data-v-2ad42bca", Component.options)
   } else {
     hotAPI.reload("data-v-2ad42bca", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./resources/assets/js/views/test.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var Component = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")(
+  /* script */
+  null,
+  /* template */
+  __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-5bb2d2fc\",\"hasScoped\":false}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/views/test.vue"),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/Users/chill/recipe-box/resources/assets/js/views/test.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] test.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5bb2d2fc", Component.options)
+  } else {
+    hotAPI.reload("data-v-5bb2d2fc", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
